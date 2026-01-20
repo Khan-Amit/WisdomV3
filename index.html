@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Cards | Resilience Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-seedling"></i> Wisdom Cards v3</h1>
+            <p class="subtitle">Repository: WisdomV3 | Final Clean Version</p>
+            <div class="creator-badge">
+                <i class="fas fa-user-shield"></i>
+                Debugged & Ready for Deployment
+            </div>
+        </header>
+
+        <!-- Main Card Display -->
+        <main class="main-content">
+            <div class="card active" id="main-card">
+                <div class="card-header">
+                    <span class="card-number">#001</span>
+                    <span class="card-category">Debug Status</span>
+                </div>
+                <div class="card-content">
+                    <h2 class="quote" id="current-quote">
+                        "First, solve the problem. Then, write the code."
+                    </h2>
+                    <p class="author" id="current-author">— John Johnson</p>
+                    <div class="explanation" id="current-explanation">
+                        Debugging complete. Files updated for WisdomV3 repository. All links point correctly to new repository.
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="wisdom-level">
+                        <i class="fas fa-check-circle"></i> Ready to Deploy
+                    </div>
+                    <div class="share-option">
+                        <i class="fas fa-rocket"></i> Launch GitHub Pages
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="controls">
+                <button class="btn" id="prev-btn">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="btn primary" id="random-btn">
+                    <i class="fas fa-random"></i> Random Wisdom
+                </button>
+                <button class="btn" id="next-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    Step <span id="current-card">2</span> of <span id="total-cards">3</span> (Files Ready)
+                </div>
+            </div>
+
+            <!-- Mini Cards Preview -->
+            <div class="mini-cards">
+                <div class="mini-card" data-index="0">
+                    <div class="mini-quote">Debug Status...</div>
+                </div>
+                <div class="mini-card" data-index="1">
+                    <div class="mini-quote">Ready to...</div>
+                </div>
+                <div class="mini-card" data-index="2">
+                    <div class="mini-quote">Launch App...</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="mission">
+                    <h3><i class="fas fa-bug"></i> Debug Complete</h3>
+                    <p>Files updated for repository: <strong>WisdomV3</strong>. All paths verified and corrected.</p>
+                </div>
+                <div class="creator-info">
+                    <h3><i class="fas fa-link"></i> Correct URLs</h3>
+                    <p>Repository: <code>github.com/Khan-Amit/WisdomV3</code><br>
+                       GitHub Pages: <code>khan-amit.github.io/WisdomV3</code></p>
+                </div>
+                <div class="github-link">
+                    <h3><i class="fab fa-github"></i> View Source</h3>
+                    <p>Click below to see the actual repository with these files.</p>
+                    <a href="https://github.com/Khan-Amit/WisdomV3" target="_blank" class="github-btn" id="real-github-btn">
+                        <i class="fab fa-github"></i> WisdomV3 Repository
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made with <i class="fas fa-heart"></i> | Repository: WisdomV3 | <span id="current-date"></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Update current date
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+              </html>
