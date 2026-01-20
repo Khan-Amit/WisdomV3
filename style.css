@@ -1,0 +1,24 @@
+/* SAME AS PREVIOUS style.css - NO CHANGES NEEDED */
+/* Repository name change doesn't affect CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ... REST OF YOUR ORIGINAL STYLE.CSS CODE ... */
+/* Copy the complete style.css from previous message */
